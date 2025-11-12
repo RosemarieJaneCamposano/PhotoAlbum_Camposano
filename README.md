@@ -286,7 +286,7 @@ Here’s a preview of the **Photo Album Web Application**:
 
 <p align="center">
   <img src="images/museums.png" alt="Museums 1" width="600">
-    <img src="images/museums.png" alt="Museums 2" width="600">
+    <img src="images/museums1.png" alt="Museums 2" width="600">
   <br>
   <em>Museums Page – Exploring Cebu’s artistic and historical museums.</em>
 </p>

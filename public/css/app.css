@@ -1,0 +1,829 @@
+@tailwindcs base;
+@tailwindcss component;
+@tailwindcss utilities
+
+/* General Reset and Body Styling */
+/* General Reset and Body Styling */
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: "Valeria", serif;
+    padding: 20px 0;
+    border-bottom: 2px solid; /* Blue line separating header from main */
+}
+
+body {
+    background: linear-gradient(to bottom, #fcf8dd, #fbf9d1);
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1; /* This allows main content to grow and take up remaining space */
+}
+
+/* Footer Styling */
+footer {
+    font-family: "Valeria", serif;
+    text-align: left;
+    font-size: 1rem;
+    color: black;
+    padding: 10px 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Footer Links */
+footer a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.photo-album h1 {
+    font-family: "Valeria", serif;
+    font-size: 40px;
+}
+
+.photo-album p {
+    font-family: "Valeria", serif;
+    font-size: 15px;
+}
+.category-btn {
+    font-family: "Valeria", serif;
+    margin-top: 20px;
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Padding for the button (adjust as needed) */
+    border-radius: 25px; /* Makes the button rounded, adjust value for more or less rounding */
+    color: white; /* Text color */
+    background: black; /* Button background color */
+    display: inline-block; /* Makes sure the button is inline and doesn't take full width */
+    text-align: center; /* Centers text in the button */
+    font-size: 1rem; /* Adjust the font size */
+}
+
+.category-btn:hover {
+    background: #faeb92;
+    border: 2px solid black;
+    color: black;
+}
+
+.home-button {
+    margin-left: 40px;
+    color: black; /* Set text color to black by default */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Set font size */
+    font-weight: bold; /* Make text bold */
+    display: inline-block; /* Ensure the text is inline */
+    position: relative; /* Make positioning possible */
+    transition: color 0.3s ease; /* Smooth transition for color and margin */
+}
+
+.home-button:hover {
+    margin-left: 50px; /* Move the button 50px to the right on hover */
+    color: #ffcc00;
+}
+/* =============>> SECTION TITLE CAPTION FOR ALL PAGES <<==========*/
+
+.main-title-caption {
+    font-family: "Valeria", serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* =============>> ENDS HERE <<==========*/
+
+/* =============>> NATURE PAGE <<==========*/
+
+/* ===== Carousel Wrapper ===== */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 40px;
+    box-shadow: none;
+}
+
+/* ===== Track ===== */
+.carousel-track {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* hide scrollbar in Firefox */
+    gap: 5px; /* spacing between items */
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none; /* hide scrollbar on Chrome/Safari */
+}
+
+/* ===== Carousel Items ===== */
+.carousel-item {
+    flex: 0 0 calc(50% - 10px); /* 4 images per view */
+    text-align: center;
+    aspect-ratio: 8/4;
+    border-radius: 5px;
+    flex-direction: column;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-tems: center;
+    transition: flex 0.3s ease-in-out;
+}
+
+.carousel-item img {
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    display: block;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.carousel-item img:hover {
+    transform: scale(0.8);
+}
+
+/* ===== Captions ===== */
+
+.main-title {
+    font-family: "Valeria", serif;
+    font-size: 40px;
+    color: #2c3e50;
+    margin-bottom: auto;
+}
+
+/* Section Titles */
+.section-title {
+    font-family: "Valeria", serif;
+    font-size: 26px;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+}
+
+/* Section Caption */
+.section-caption {
+    font-family: "Valeria", serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 5px;
+    color: black;
+    text-align: left;
+}
+
+.caption {
+    font-family: "Valeria", serif;
+    text-align: center;
+    font-size: 14px;
+    color: #333; /* simple dark text */
+    font-style: italic;
+    margin-top: 10px;
+    position: static; /* remove absolute positioning */
+    background: none; /* no background */
+}
+
+/* ===== Scroll Buttons ===== */
+.scroll-btn {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    background-color: white;
+    transform: none;
+    color: none;
+    border: none;
+    padding: 5px 5px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-btn:hover {
+    background-color: transparent;
+    color: white;
+    transform: scale(1);
+}
+
+.scroll-btn.left {
+    left: 10px;
+}
+
+.scroll-btn.right {
+    right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .carousel-item {
+        flex: 0 0 calc(33.333% - 0.75rem);
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+/* Tablets (2 items per view) */
+@media (max-width: 768px) {
+    .carousel-item {
+        flex: 0 0 calc(50% - 0.75rem);
+    }
+    .carousel-item img {
+        height: 260px;
+    }
+}
+
+/* Phones (1 item per view) */
+@media (max-width: 480px) {
+    .carousel-item {
+        flex: 0 0 calc(50% - 0.75rem);
+    }
+    .carousel-item img {
+        height: 220px;
+    }
+}
+
+/* =============>> START HERITAGE PAGE <<==========*/
+.heritage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Two-column layout */
+.heritage-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+/* Each column */
+.heritage-column {
+    display: grid;
+    gap: 20px;
+}
+
+/* Sections inside column */
+.heritage-section {
+    display: grid;
+    gap: 10px;
+    text-align: start;
+}
+
+.heritage-title {
+    font-family: "Valeria", serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: auto;
+}
+
+/* Section titles */
+.heritage-sectitle {
+    font-family: "Valeria", serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border-bottom: 3px solid #000;
+}
+
+/* Section paragraphs */
+.heritage-secpara {
+    font-family: "Valeria", serif;
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Captions */
+.heritage-caption {
+    font-family: "Valeria", serif;
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: italic;
+    color: #444;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Images container */
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Each image wrapper */
+.heritage-column .images div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.heritage-column .images div img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.images div img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .heritage-columns {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .heritage-column .images div img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .images {
+        grid-template-columns: 1fr;
+    }
+    .heritage-sectitle {
+        font-family: "Valeria", serif;
+        padding: 8px 12px;
+    }
+    .heritage-column .images div img {
+        height: 180px;
+    }
+}
+/* =============>> END HERITAGE PAGE <<==========*/
+
+/* =============>> DELICACIES PAGE <<==========*/
+
+.delicacies-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+
+.delicacies-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.delicacies-column {
+    flex: 1;
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.delicacies-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Image + caption container */
+.del-image {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.del-image div {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.del-image img {
+    width: 200px;
+    height: 180px;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: block;
+}
+
+.delicacies-title {
+    font-family: "Valeria", serif;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: auto;
+}
+
+.delicacies-sectitle {
+    font-family: "Valeria", serif;
+    font-size: 26px;
+    text-align: left;
+    color: #222;
+    margin-bottom: 5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border-bottom: 3px solid #000;
+}
+
+.delicacies-secpara {
+    font-family: "Valeria", serif;
+    text-align: left;
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: auto;
+    max-width: 95%;
+}
+
+.delicacies-caption-title {
+    font-family: "Valeria", serif;
+    text-align: left;
+    font-size: 18px;
+    flex: 1;
+    color: #555;
+    line-height: 1;
+}
+
+.delicacies-caption {
+    font-family: "Valeria", serif;
+    font-style: italic;
+    text-align: left;
+    font-size: 0.9em;
+    flex: 2.5;
+    color: #555;
+    line-height: 2;
+}
+
+/* ===== DELICACIES RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .delicacies-container {
+        padding: 30px 20px; /* reduce padding for smaller screens */
+    }
+
+    .delicacies-columns {
+        flex-direction: column; /* keep stacking columns */
+        gap: 40px; /* smaller gap for mobile */
+        align-items: stretch; /* keep full width */
+    }
+
+    .delicacies-column {
+        width: 100%; /* full width */
+        min-width: auto; /* remove min-width constraint */
+        gap: 40px; /* consistent spacing */
+    }
+
+    .delicacies-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .del-image {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .del-image div {
+        flex-direction: row; /* keep image + caption side by side */
+        align-items: flex-start;
+        gap: 15px;
+        flex-wrap: wrap; /* wrap if too narrow */
+    }
+
+    .del-image img {
+        width: 200px; /* smaller images */
+        height: 180px;
+    }
+
+    .delicacies-caption {
+        text-align: left;
+        padding-top: 0; /* remove unnecessary padding */
+        flex: 4; /* keep flex behavior */
+    }
+
+    .delicacies-title {
+        font-size: 1.8em; /* scale title */
+        margin-bottom: 40px;
+    }
+
+    .delicacies-sectitle {
+        font-size: 22px;
+    }
+
+    .delicacies-secpara {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+}
+/* =============>> END DELICACIES PAGE <<==========*/
+
+/* =============>> START FESTIVAL PAGE <<==========*/
+.festival-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Two-column layout */
+.festival-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+/* Each column */
+.festival-column {
+    display: grid;
+    gap: 20px;
+}
+
+/* Sections inside column */
+.festival-section {
+    display: grid;
+    gap: 10px;
+    text-align: start;
+}
+
+.festival-title {
+    font-family: "Valeria", serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* Section titles */
+.festival-sectitle {
+    font-family: "Valeria", serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border-bottom: 3px solid #000;
+}
+
+/* Section paragraphs */
+.festival-secpara {
+    font-family: "Valeria", serif;
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Captions styling */
+.festival-caption {
+    font-family: "Valeria", serif;
+    margin-top: 8px;
+    font-size: 15px;
+    font-style: italic;
+    color: #444;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Images container */
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Each image wrapper */
+.festival-column .images div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Image styling */
+.festival-column .images div img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.images div img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .festival-columns {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .festival-column .images div img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .images {
+        grid-template-columns: 1fr;
+    }
+    .festival-sectitle {
+        font-family: "Valeria", serif;
+        padding: 8px 12px;
+    }
+    .festival-column .images div img {
+        height: 180px;
+    }
+}
+/* =============>> END FESTIVAL PAGE <<==========*/
+
+/* =============>> IMAGE MODAL PAGE <<==========*/
+.image-modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow: auto;
+    z-index: 1000;
+
+    /* flex layout only when active */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-modal.active {
+    display: flex; /* show modal when active */
+}
+
+.image-modal img.modal-content {
+    max-width: 85%;
+    max-height: 80vh;
+    border-radius: 8px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.image-modal .modal-caption {
+    margin: 15px auto;
+    text-align: center;
+    font-family: "Valeria", serif;
+    color: #f2f2f2;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: #aaa;
+}
+/* =============>> END NATURE PAGE <<==========*/
+
+/* =============>> START MUSEUMS PAGE <<==========*/
+
+/* ===== MUSEUMS Wrapper ===== */
+.museums-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 40px;
+    box-shadow: none;
+}
+
+/* ===== Track ===== */
+.museums-track {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* hide scrollbar in Firefox */
+    gap: 5px; /* spacing between items */
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.museums-track::-webkit-scrollbar {
+    display: none; /* hide scrollbar on Chrome/Safari */
+}
+
+/* ===== museums Items ===== */
+.museums-item {
+    flex: 0 0 calc(50% - 10px); /* 4 images per view */
+    text-align: center;
+    aspect-ratio: 8/4;
+    border-radius: 5x;
+    flex-direction: column;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-tems: center;
+    transition: flex 0.3s ease-in-out;
+}
+
+.museums-item img {
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    display: block;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.museums-item img:hover {
+    transform: scale(0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .museums-item {
+        flex: 0 0 calc(33.333% - 0.75rem);
+    }
+    .museums-item img {
+        height: 300px;
+    }
+}
+
+/* Tablets (2 items per view) */
+@media (max-width: 768px) {
+    .museums-item {
+        flex: 0 0 calc(50% - 0.75rem);
+    }
+    .museums-item img {
+        height: 260px;
+    }
+}
+
+/* Phones (1 item per view) */
+@media (max-width: 480px) {
+    .museums-item {
+        flex: 0 0 calc(50% - 0.75rem);
+    }
+    .museums-item img {
+        height: 220px;
+    }
+}

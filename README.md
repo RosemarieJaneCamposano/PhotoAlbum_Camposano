@@ -257,8 +257,8 @@ Here’s a preview of the **Photo Album Web Application**:
 </p>
 
 <p align="center">
-  <img src="public/images/nature-page.png" alt="Nature 1" width="600">
-    <img src="public/images/nature-page.png" alt="Nature 2" width="600">
+  <img src="public/images/nature.png" alt="Nature 1" width="600">
+    <img src="public/images/nature1.png" alt="Nature 2" width="600">
   <br>
   <em>Nature Page – Showcasing Cebu’s natural attractions.</em>
 </p>

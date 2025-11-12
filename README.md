@@ -245,6 +245,12 @@ Categories:
     -   Custom CSS styling
     -   Proper folder structure
     -   Images properly displayed without missing links
+    
+## 🖥 Navigation
+
+- The header **“Soul of the South”** acts as a **home button** on every page, allowing users to return to the Home Page easily.  
+- Left and right navigation buttons let users smoothly browse through images on each page.  
+- Clicking an image opens it in a larger view, **looping only within its category**, keeping browsing focused and organized.
 
 ## 📸 Project Screenshots
 

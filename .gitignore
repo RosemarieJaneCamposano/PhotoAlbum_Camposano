@@ -2,14 +2,6 @@
 /vendor
 /node_modules
 
-# Environment & Config
-.env
-.env.backup
-.env.production
-Homestead.json
-Homestead.yaml
-auth.json
-
 # Storage (runtime/cache/log files)
 public/storage
 storage/*.key
@@ -17,23 +9,14 @@ storage/logs
 storage/framework/sessions
 storage/framework/views
 storage/framework/cache
-storage/pail
+
+# Environment & Config
+.env
 
 # IDEs & Editors
 .idea
 .vscode
-.fleet
-.zed
-.phpactor.json
-.phpunit.result.cache
-.phpunit.cache
-
-# Public build & temporary assets
-/public/build
-/public/hot
 
 # OS & misc
-.DS_Store
-Thumbs.db
 npm-debug.log
 yarn-error.log

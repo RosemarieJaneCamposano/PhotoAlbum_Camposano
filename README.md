@@ -285,7 +285,7 @@ Here’s a preview of the **Photo Album Web Application**:
 
 <p align="center">
   <img src="public/images/festival.png" alt="Festivals 1" width="600">
-    <img src="public/images/festival1" alt="Festivals 2" width="600">
+    <img src="public/images/festival1.png" alt="Festivals 2" width="600">
   <br>
   <em>Festivals Page – Celebrating Cebu’s colorful events and traditions.</em>
 </p>

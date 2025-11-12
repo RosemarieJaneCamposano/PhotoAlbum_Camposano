@@ -251,42 +251,42 @@ Categories:
 Here’s a preview of the **Photo Album Web Application**:
 
 <p align="center">
-  <img src="images/homepage.png" alt="Homepage" width="600">
+  <img src="public/images/homepage.png" alt="Homepage" width="600">
   <br>
   <em>Home Page – Displays navigation links to all five categories.</em>
 </p>
 
 <p align="center">
-  <img src="images/nature-page.png" alt="Nature 1" width="600">
-    <img src="images/nature-page.png" alt="Nature 2" width="600">
+  <img src="public/images/nature-page.png" alt="Nature 1" width="600">
+    <img src="public/images/nature-page.png" alt="Nature 2" width="600">
   <br>
   <em>Nature Page – Showcasing Cebu’s natural attractions.</em>
 </p>
 
 <p align="center">
-  <img src="images/heritage.png" alt="Nature 1" width="600">
-   <img src="images/heritage1.png" alt="Nature 2" width="600">
+  <img src="public/images/heritage.png" alt="Nature 1" width="600">
+   <img src="public/images/heritage1.png" alt="Nature 2" width="600">
   <br>
   <em>Nature Page – Showcasing Cebu’s rich heritage.</em>
 </p>
 
 <p align="center">
-  <img src="images/delicacies.png" alt="Delicacies 1" width="600">
-    <img src="images/delicacies1.png" alt="Delicacies 2" width="600">
+  <img src="public/images/delicacies.png" alt="Delicacies 1" width="600">
+    <img src="public/images/delicacies1.png" alt="Delicacies 2" width="600">
   <br>
   <em>Delicacies Page – Featuring Cebu’s rich food culture.</em>
 </p>
 
 <p align="center">
-  <img src="images/festival.png" alt="Festivals 1" width="600">
-    <img src="images/festival1" alt="Festivals 2" width="600">
+  <img src="public/images/festival.png" alt="Festivals 1" width="600">
+    <img src="public/images/festival1" alt="Festivals 2" width="600">
   <br>
   <em>Festivals Page – Celebrating Cebu’s colorful events and traditions.</em>
 </p>
 
 <p align="center">
-  <img src="images/museums.png" alt="Museums 1" width="600">
-    <img src="images/museums1.png" alt="Museums 2" width="600">
+  <img src="public/images/museums.png" alt="Museums 1" width="600">
+    <img src="public/images/museums1.png" alt="Museums 2" width="600">
   <br>
   <em>Museums Page – Exploring Cebu’s artistic and historical museums.</em>
 </p>

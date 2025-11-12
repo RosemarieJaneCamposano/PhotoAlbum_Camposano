@@ -1,22 +1,13 @@
-# Laravel & PHP
 /vendor
 /node_modules
-
-# Storage (runtime/cache/log files)
-public/storage
-storage/*.key
-storage/logs
-storage/framework/sessions
-storage/framework/views
-storage/framework/cache
-
-# Environment & Config
-.env
-
-# IDEs & Editors
-.idea
-.vscode
-
-# OS & misc
+/public/storage
+/storage/*.key
+/storage/logs
+/storage/framework/sessions
+/storage/framework/views
+/storage/framework/cache
+/.env
+/.idea
+/.vscode
 npm-debug.log
 yarn-error.log

@@ -1,6 +1,6 @@
 @tailwindcs base;
 @tailwindcss component;
-@tailwindcss utilities
+@tailwindcss utilities;
 
 * {
     margin: 0;
